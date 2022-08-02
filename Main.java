@@ -21,15 +21,16 @@ public class Main {
                         break;
                     case "1":
                         fan.changeSpeed();
+                        System.out.println(fan.toString());
                         break;
                     case "2":
                         fan.changeDirection();
+                        System.out.println(fan.toString());
                         break;
                     default:
                         System.out.println("Invalid Input.");
                         break;
                 }
-                System.out.println(fan.toString());
             } catch(Exception e){
                 System.out.println("Input Unavailable.");
                 break;
