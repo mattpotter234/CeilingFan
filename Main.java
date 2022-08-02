@@ -26,11 +26,12 @@ public class Main {
                         fan.changeDirection();
                         break;
                     default:
-                     break;
+                        System.out.println("Invalid Input.");
+                        break;
                 }
                 System.out.println(fan.toString());
             } catch(Exception e){
-                System.out.println("input unavailable.");
+                System.out.println("Input Unavailable.");
                 break;
             }
         }
