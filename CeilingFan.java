@@ -32,5 +32,13 @@ public class CeilingFan {
     public void changeDirection(){
         setIsReversed(!getIsReversed());
     }
+    
+    @Override
+    public String toString(){
+        if(isReversed)
+            return "Speed: "+getSpeed()+", Reversed: true";
+        else 
+            return "Speed: "+getSpeed()+", Reversed: false";
+    }
 
 }
