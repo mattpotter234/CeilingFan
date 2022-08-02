@@ -35,10 +35,19 @@ public class CeilingFan {
     
     @Override
     public String toString(){
-        if(isReversed)
-            return "Speed: "+getSpeed()+", Reversed: true";
-        else 
-            return "Speed: "+getSpeed()+", Reversed: false";
+        if(getSpeed()==0){
+            if(getIsReversed())
+                return "Speed: off, Reversed: true";
+            else 
+                return "Speed: off, Reversed: false";
+        }
+        else {
+            if(getIsReversed())
+                return "Speed: "+getSpeed()+", Reversed: true";
+            else 
+                return "Speed: "+getSpeed()+", Reversed: false";
+        }
+    
     }
 
 }
