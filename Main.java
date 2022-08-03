@@ -6,8 +6,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         CeilingFan fan = new CeilingFan();
     
-        System.out.println("Ceiling Fan Options:\n--------------------");
-        System.out.println("Pull a cord.\n1 - Speed\n2 - Direction\n0 - Exit");
+        System.out.println("Ceiling Fan Options:\n--------------------\nPull a cord.\n1 - Speed\n2 - Direction\n0 - Exit");
     
         boolean exit = false;
     
