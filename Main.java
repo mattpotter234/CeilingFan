@@ -11,8 +11,8 @@ public class Main {
     
         boolean exit = false;
     
-        while(exit==false){
-            try{
+        try{
+            while(!exit){
                 String option = input.nextLine();
         
                 switch(option){
@@ -31,10 +31,9 @@ public class Main {
                         System.out.println("Invalid Input.");
                         break;
                 }
-            } catch(Exception e){
-                System.out.println("Input Unavailable.");
-                break;
             }
+        } catch(Exception e){
+            System.out.println("Input Unavailable.");
         }
     }
 }
