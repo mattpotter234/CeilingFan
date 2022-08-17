@@ -8,13 +8,13 @@ public class CeilingFan {
         this.speed = 0;
     }
     
-    public void setSpeed(int s){
+    private void setSpeed(int s){
         this.speed = s;
     }
     public int getSpeed(){
         return speed;
     }
-    public void setIsReversed(boolean r){
+    private void setIsReversed(boolean r){
         this.isReversed = r;
     }
     public boolean getIsReversed(){
